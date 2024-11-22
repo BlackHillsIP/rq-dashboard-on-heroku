@@ -1,12 +1,16 @@
 import os
 from flask import Flask, redirect
+import redis
 import rq_dashboard
 from rq_dashboard.cli import add_basic_auth
 
 app = Flask(__name__)
 app.config.from_object(rq_dashboard.default_settings)
 app.config["RQ_DASHBOARD_REDIS_URL"] = os.environ.get("RQ_DASHBOARD_REDIS_URL")
-rq_dashboard.web.setup_rq_connection(app)
+
+app.redis_conn = redis.StrictRedis.from_url(  # type: ignore
+    os.environ.get("RQ_DASHBOARD_REDIS_URL", ""), ssl_cert_reqs=None
+)
 
 add_basic_auth(
     blueprint=rq_dashboard.blueprint,
