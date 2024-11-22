@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "93323b1506c6311d63bf67e0d55b4d36aa29e4c19ff3beb5e3d60b2b9af951ed"
+            "sha256": "337d6e6031d9dc9a610d339bf5a7836ebeabcc9c57de2f20547f4c08be3bf5d9"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -156,6 +156,13 @@
             "markers": "python_version >= '3.8'",
             "version": "==5.2.0"
         },
+        "redis-sentinel-url": {
+            "hashes": [
+                "sha256:c6991e2000c5c7a5e2b95eb2d62fd5b0a6b02a59554caf0f9f79d18e152d9663",
+                "sha256:ec1854ab9379a28789423c3cd4082739fb69c7b4b11bb50ae7858697c131b13e"
+            ],
+            "version": "==1.0.1"
+        },
         "rq": {
             "hashes": [
                 "sha256:76d2a4a27f8fd5c4cfa200cd442efe3c1fd73525c676af06f07fcc0b81bdb70d",
@@ -166,10 +173,11 @@
         },
         "rq-dashboard": {
             "hashes": [
-                "sha256:95163f0a8413e6be277d60eada0125f1c4b230577c3fa538a31a77a2cb556f8a"
+                "sha256:764d1c6fe415b749444aec7e7bd01e72f09423fced9ecd41802853cbbfa1f382",
+                "sha256:7fc1655a41e52087c221e3df76a91e5785122d98e31f1facfc399dcede80e1c2"
             ],
             "index": "pypi",
-            "version": "==0.6.1"
+            "version": "==0.8.2.2"
         },
         "setuptools": {
             "hashes": [

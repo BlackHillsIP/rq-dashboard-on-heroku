@@ -3,7 +3,7 @@ python_version = '3.12'
 
 [packages]
 gunicorn = '==20.0.4'
-rq-dashboard = '==0.6.1'
+rq-dashboard = "*"
 
 [dev-packages]
 black = '==22.12.0'
