@@ -1,6 +1,6 @@
 {
   "name": "RQ Dashboard",
   "description": "Web front-end for monitoring RQ queues",
-  "repository": "https://github.com/metabolize/rq-dashboard-on-heroku",
+  "repository": "https://github.com/BlackHillsIP/rq-dashboard-on-heroku",
   "keywords": ["rq", "dashboard", "rq-dashboard"]
 }
