@@ -26,7 +26,7 @@ app = Flask(__name__)
 app.config.from_object(rq_dashboard.default_settings)
 app.config["RQ_DASHBOARD_REDIS_URL"] = os.environ.get("RQ_DASHBOARD_REDIS_URL")
 
-rq_dashboard.web.setup_rq_connection(app)
+setup_rq_connection(app)
 
 add_basic_auth(
     blueprint=rq_dashboard.blueprint,
